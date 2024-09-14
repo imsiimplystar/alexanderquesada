@@ -44,6 +44,12 @@
         function buyNow() {
             alert("get scam.");
         }
+
+        window.onload = function() {
+            if (window.location.hostname === "alexanderquesada.store" && window.location.pathname !== "/") {
+                window.location.href = "https://alexanderquesada.store";
+            }
+        };
     </script>
 </head>
 <body>
